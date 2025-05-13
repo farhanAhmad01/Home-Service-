@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in {
+    animation: slide-in 0.3s ease-out;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", sans-serif;
+}
+
+.banner-swiper-container .swiper-pagination-bullet {
+    background: #ffffff !important; /* Change inactive dots to white */
+    opacity: 0.5;
+}
+
+.banner-swiper-container .swiper-pagination-bullet-active {
+    background: #ffffff !important; /* Change active dot to white */
+    opacity: 1;
+}
